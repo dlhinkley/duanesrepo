@@ -1,3 +1,6 @@
 /RestClient.class
 /RestClientException.class
 /RestClientResponse.class
+/OrderClient.class
+/OrderRowClient.class
+/Order.class
