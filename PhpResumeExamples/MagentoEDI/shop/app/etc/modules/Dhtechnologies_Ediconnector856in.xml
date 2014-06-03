@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dhtechnologies_Ediconnector856in>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Dhtechnologies_Ediconnectorbase/>
+            </depends>
+        </Dhtechnologies_Ediconnector856in>
+    </modules>
+</config>

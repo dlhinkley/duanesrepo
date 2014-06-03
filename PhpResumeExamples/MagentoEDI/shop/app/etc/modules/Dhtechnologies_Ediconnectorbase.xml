@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dhtechnologies_Ediconnectorbase>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Dhtechnologies_Ediconnectorbase>
+    </modules>
+</config>

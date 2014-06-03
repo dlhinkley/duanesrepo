@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<edi translate="label" module="ediconnectorbase">
+			<label>EDI</label>
+			<sort_order>100</sort_order>
+		</edi>
+	</tabs>
+	<sections>
+		<ediconnector translate="label" module="ediconnectorbase">
+			<label>EDI Connector</label>
+			<tab>edi</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+
+			<groups>
+				<ediconnectorgeneral translate="label" module="ediconnectorbase">
+					<!-- will have title 'New Module' -->
+					<label>General</label>
+					<!-- position between other payment methods -->
+					<sort_order>670</sort_order>
+					<!-- do not show this configuration options in store scope -->
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<!-- is this payment method active for the website? -->
+						<active translate="label">
+							<!-- label for the field -->
+							<label>Enabled</label>
+							<!-- input type for configuration value -->
+							<frontend_type>select</frontend_type>
+							<!-- model to take the option values from -->
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<!-- field position -->
+							<sort_order>1</sort_order>
+							<!-- do not show this field in store scope -->
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</active>
+						<transport_type translate="label">
+							<label>Transport Type</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select webserver if the files are located on this webserver.  Otherwise select FTP</comment>
+							
+							<source_model>Dhtechnologies_Ediconnectorbase_Transporttypeselect
+							</source_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</transport_type>
+
+						<ftp_address translate="label">
+							<label>Ftp Address</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</ftp_address>
+						<ftp_username translate="label">
+							<label>Ftp Username</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</ftp_username>
+						<ftp_password translate="label">
+							<label>Ftp Password</label>
+							<frontend_type>password</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</ftp_password>
+						<ftp_out_path translate="label">
+							<label>Ftp Output Path</label>
+							<comment>The FTP relative path to outbound files</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</ftp_out_path>
+						<ftp_in_path translate="label">
+							<label>Ftp Input Path</label>
+							<comment>The FTP relative path to inbound files</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</ftp_in_path>
+						<confirmation_suffix translate="label">
+							<label>Confirmation File Suffix</label>
+							<comment>The file suffix added to confirmation files, if any.  Normally blank.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</confirmation_suffix>
+						<inbound_suffix translate="label">
+							<label>Inbound File Suffix</label>
+							<comment>The suffix used to detect inbound from outbound files. Normally blank.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</inbound_suffix>
+						<outbound_suffix translate="label">
+							<label>Outbound File Suffix</label>
+							<comment>The suffix used to detect outbound from inbound files. Normally blank.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</outbound_suffix>
+						<save_local_sent translate="label">
+							<label>Save Local Copy</label>
+							<comment>Select yes to save a local copy of inbound and outbound files.</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</save_local_sent>
+						<save_local_sent_document_path
+							translate="label">
+							<label>Local Copy Path</label>
+							<comment>If 'Save Local Copy' is enabled, defines the path on
+								this server a backup copy of each file sent and received is
+								stored.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</save_local_sent_document_path>
+						<outbound_logs_days_to_keep translate="label">
+							<label>Days To Keep Outbound Transactions</label>
+							<comment>The number of days to keep outbound transactions logged.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</outbound_logs_days_to_keep>
+						<inbound_logs_days_to_keep translate="label">
+							<label>Days To Keep Inbound Transactions</label>
+							<comment>The number of days to keep inbound transactions logged.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>14</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</inbound_logs_days_to_keep>
+						<delete_received_file translate="label">
+							<!-- label for the field -->
+							<label>Delete Received Files</label>
+							<!-- input type for configuration value -->
+							<comment>Yes to delete inbound files after retrieval.</comment>
+							<frontend_type>select</frontend_type>
+							<!-- model to take the option values from -->
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<!-- field position -->
+							<sort_order>15</sort_order>
+							<!-- do not show this field in store scope -->
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</delete_received_file>
+						<end_line_delimiter translate="label">
+							<label>EDI End Of Line Delimiter</label>
+							<comment>The hex code(s) of the charcters at the end of each edi
+								document line of date. Normal a return. No Spaces. (0d = newline, 0a = return, 7e = ~)</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</end_line_delimiter>
+						<in_line_delimiter translate="label">
+							<label>EDI Field Seperator</label>
+							<comment>The charachter used to seperate each field of data on a
+								document line.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</in_line_delimiter>
+						<record_type_element translate="label">
+							<label>Record Type Element</label>
+							<comment>The EDI element that contains the record type for each
+								document.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>18</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</record_type_element>
+						<record_type_position translate="label">
+							<label>Record Type Column</label>
+							<comment>The nth column that contains the record type for  the document.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>19</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</record_type_position>
+						<time_format translate="label">
+							<label>Time Format</label>
+							<comment>Format for time format (ex. 12:30).  Uses same syntax as PHP date command.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</time_format>
+						<time_format translate="label">
+							<label>Time Format</label>
+							<comment>Format for longer time format (ex. 12:30:45).  Uses same syntax as PHP date command.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</time_format>
+						<date_format translate="label">
+							<label>Date Format</label>
+							<comment>Format for dates (ex. 120403).  Uses same syntax as PHP date command.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>22</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</date_format>
+						<long_date_format translate="label">
+							<label>Long Date Format</label>
+							<comment>Format for longer data format (ex. 2012-04-03).  Uses same syntax as PHP date command.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>23</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</long_date_format>
+					</fields>
+				</ediconnectorgeneral>
+				<!-- Ediconnector997out fieldset -->
+				<ediconnector850out translate="label"  module="ediconnectorbase">
+					<!-- will have title 'New Module' -->
+					<label>Document 850 Out</label>
+					<!-- position between other payment methods -->
+					<sort_order>680</sort_order>
+					<!-- do not show this configuration options in store scope -->
+					<show_in_default>1</show_in_default>
+					<show_in_website>0</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<!-- is this payment method active for the website? -->
+						<active translate="label">
+							<!-- label for the field -->
+							<label>Enabled</label>
+							<!-- input type for configuration value -->
+							<frontend_type>select</frontend_type>
+							<!-- model to take the option values from -->
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<!-- field position -->
+							<sort_order>1</sort_order>
+							<!-- do not show this field in store scope -->
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</active>
+						<send_order_status translate="label">
+							<label>Order Status</label>
+							<comment>The order status of orders to download.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</send_order_status>
+					</fields>						
+				</ediconnector850out>
+			</groups>
+			</ediconnector>
+		<!-- START Add SCAC Code option to configuration for each carrier -->
+		<carriers>
+			<groups>
+				<flatrate>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</flatrate>
+				<freeshipping>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</freeshipping>
+				<tablerate>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</tablerate>
+				<ups>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</ups>
+				<usps>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</usps>
+				<fedex>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</fedex>
+				<dhl>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</dhl>
+				<dhlint>
+					<fields>
+						<scac translate="label">
+							<label>SCAC Code</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>95</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>0</show_in_website>
+							<show_in_store>0</show_in_store>
+						</scac>
+					</fields>
+				</dhlint>
+			</groups>
+		</carriers>
+		<!-- END Add SCAC Code option to configuration for each carrier -->
+	</sections>
+</config>

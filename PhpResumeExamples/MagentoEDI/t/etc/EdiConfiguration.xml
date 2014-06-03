@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ediConfiguration>
+	<valueList>
+		<valueDefinition>
+			<name></name>
+			<value></value>
+		</valueDefinition>
+	</valueList>
+	<actionList>
+		<actionDefinition>
+			<seqenceNum>1</seqenceNum>
+			<documentType>850</documentType>
+			<direction>out</direction>
+			<actionType>SalesOrderOut</actionType>
+			<processCodes></processCodes>
+		</actionDefinition>
+	</actionList>
+</ediConfiguration>

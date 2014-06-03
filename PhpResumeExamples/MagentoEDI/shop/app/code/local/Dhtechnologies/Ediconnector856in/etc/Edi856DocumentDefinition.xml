@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documentDefinition>
+	<sendAcknowledgement>true</sendAcknowledgement>
+	<lineDefinition>
+		<recordType>ISA</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>1</position>
+				<fieldName>AuthorizationInformationQualifier</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>2</position>
+				<fieldName>AuthorizationInformation</fieldName>
+				<type>AN</type>
+				<minLength>10</minLength>
+				<maxLength>10</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>3</position>
+				<fieldName>SecurityInformationQualifier</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>4</position>
+				<fieldName>SecurityInformation</fieldName>
+				<type>AN</type>
+				<minLength>10</minLength>
+				<maxLength>10</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>5</position>
+				<fieldName>InterchangeIDQualifier1</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>6</position>
+				<fieldName>InterchangeSenderID</fieldName>
+				<type>AN</type>
+				<minLength>15</minLength>
+				<maxLength>15</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>7</position>
+				<fieldName>InterchangeIDQualifier2</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>8</position>
+				<fieldName>InterchangeReceiverID</fieldName>
+				<type>AN</type>
+				<minLength>15</minLength>
+				<maxLength>15</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>9</position>
+				<fieldName>InterchangeDate</fieldName>
+				<type>DT</type>
+				<minLength>6</minLength>
+				<maxLength>6</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>10</position>
+				<fieldName>InterchangeTime</fieldName>
+				<type>TM</type>
+				<minLength>4</minLength>
+				<maxLength>4</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>11</position>
+				<fieldName>InterchangeControlStandardsIdentifier</fieldName>
+				<type>A</type>
+				<minLength>1</minLength>
+				<maxLength>1</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>12</position>
+				<fieldName>InterchangeControlVersionNumber</fieldName>
+				<type>N</type>
+				<minLength>5</minLength>
+				<maxLength>5</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>13</position>
+				<fieldName>InterchangeControlNumber</fieldName>
+				<type>A</type>
+				<minLength>9</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<calculatedValue>InterchangeControlNumber</calculatedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>14</position>
+				<fieldName>AcknowledgmentRequested</fieldName>
+				<type>N</type>
+				<minLength>1</minLength>
+				<maxLength>1</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>15</position>
+				<fieldName>UsageIndicator</fieldName>
+				<type>A</type>
+				<minLength>1</minLength>
+				<maxLength>1</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>16</position>
+				<fieldName>ComponentElementSeparator</fieldName>
+				<type>T</type>
+				<minLength>1</minLength>
+				<maxLength>1</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>1</group>
+		<parentGroup>0</parentGroup>
+		<order>1</order>
+		<level>1</level>
+	</lineDefinition>
+
+
+
+
+	<lineDefinition>
+		<recordType>GS</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>1</position>
+				<fieldName>FunctionalIdCode</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<ackValue>FunctionalIdCode</ackValue>
+			</column>
+
+			<column>
+				<position>2</position>
+				<fieldName>ApplicationSendersCode</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>15</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>3</position>
+				<fieldName>ApplicationReceiversCode</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>15</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>4</position>
+				<fieldName>Date</fieldName>
+				<type>A</type>
+				<minLength>8</minLength>
+				<maxLength>8</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>5</position>
+				<fieldName>Time</fieldName>
+				<type>A</type>
+				<minLength>4</minLength>
+				<maxLength>8</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>6</position>
+				<fieldName>GroupControlNumber</fieldName>
+				<type>A</type>
+				<minLength>1</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<ackValue>GroupControlNumber</ackValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>7</position>
+				<fieldName>ResponsibleAgencyCode</fieldName>
+				<type>A</type>
+				<minLength>1</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+
+			<column>
+				<position>8</position>
+				<fieldName>VersionRelIndIDCode</fieldName>
+				<type>A</type>
+				<minLength>1</minLength>
+				<maxLength>12</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>1</group>
+		<parentGroup>0</parentGroup>
+		<order>2</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>ST</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue>ST</fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>TransactionSetIdentifierCode</fieldName>
+				<type>ID</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue>856</fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>TransactionSetControlNumber</fieldName>
+				<type>A</type>
+				<minLength>4</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<orderValue>RealOrderId</orderValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>2</group>
+		<parentGroup>1</parentGroup>
+		<order>1</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>BSN</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue>BSN</fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>TransactionSetPurposeCode</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue>00</fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>ShipmentIdentification</fieldName>
+				<type>AN</type>
+				<minLength>8</minLength>
+				<maxLength>8</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>3</position>
+				<fieldName>Date</fieldName>
+				<type>DT</type>
+				<minLength>8</minLength>
+				<maxLength>8</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>4</position>
+				<fieldName>Time</fieldName>
+				<type>TM</type>
+				<minLength>1</minLength>
+				<maxLength>30</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>1</order>
+		<level>1</level>
+		<shipmentLoop>true</shipmentLoop>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>HL</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>HierachicalIdNumber</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>12</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>HierachicalParentIdNumber</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>12</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>3</position>
+				<fieldName>HierachicalLevelCode</fieldName>
+				<type>ID</type>
+				<minLength>1</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>2</order>
+		<level>1</level>
+		<shipmentDetailLoop>
+			<value>true</value>
+			<conditional>
+				<filter>
+					<fieldName>HierachicalLevelCode</fieldName>
+					<fieldValue>I</fieldValue>
+				</filter>
+			</conditional>
+		</shipmentDetailLoop>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>TD5</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>Empty1</fieldName>
+				<type>AN</type>
+				<minLength>2</minLength>
+				<maxLength>3</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>IndentificationCodeQualifier</fieldName>
+				<type>ID</type>
+				<minLength>1</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>3</position>
+				<fieldName>ShippingMethodCode</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>80</maxLength>
+				<required>O</required>
+				<shipmentValue>ScacCode</shipmentValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>4</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>REF</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>ReferenceIdentificationQualifier</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>ReferenceIdentification</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>30</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+				<shipmentValue>TrackingNumber</shipmentValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>5</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>DTM</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>DateTimeQualifier</fieldName>
+				<type>ID</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>Date</fieldName>
+				<type>DT</type>
+				<minLength>8</minLength>
+				<maxLength>8</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>6</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>PRF</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>PurchaseOrderReference</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>22</maxLength>
+				<required>M</required>
+				<shipmentValue>OrderNumber</shipmentValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>8</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>LIN</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>AssignedIdentifcation</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>20</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>2</position>
+				<fieldName>ProductServiceIdQualifier</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>3</position>
+				<fieldName>ProductServiceId</fieldName>
+				<type>AN</type>
+				<minLength>1</minLength>
+				<maxLength>48</maxLength>
+				<required>M</required>
+				<shipmentDetailValue>Sku</shipmentDetailValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>4</group>
+		<parentGroup>3</parentGroup>
+		<order>2</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>SN1</recordType>
+
+		<columnDefinition>
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>Empty</fieldName>
+				<type>N</type>
+				<minLength>2</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>NumberOfUnitsShipped</fieldName>
+				<type>R</type>
+				<minLength>1</minLength>
+				<maxLength>10</maxLength>
+				<required>M</required>
+				<shipmentDetailValue>QuantityShipped</shipmentDetailValue>
+			</column>
+
+			<column>
+				<position>3</position>
+				<fieldName>UnitOrBasisForMeasurementCode</fieldName>
+				<type>ID</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>4</group>
+		<parentGroup>3</parentGroup>
+		<order>3</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>SAC</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>AllowanceOrChargeIndicator</fieldName>
+				<type>ID</type>
+				<minLength>1</minLength>
+				<maxLength>1</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>ServicePromotionAllowance</fieldName>
+				<type>ID</type>
+				<minLength>4</minLength>
+				<maxLength>4</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>3</position>
+				<fieldName>Empty1</fieldName>
+				<type>N</type>
+				<minLength>2</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>4</position>
+				<fieldName>Empty2</fieldName>
+				<type>N</type>
+				<minLength>2</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+			<column>
+				<position>5</position>
+				<fieldName>Amount</fieldName>
+				<type>N2</type>
+				<minLength>1</minLength>
+				<maxLength>15</maxLength>
+				<required>O</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>4</group>
+		<parentGroup>3</parentGroup>
+		<order>4</order>
+		<level>1</level>
+		<shipmentDetailLoop>true</shipmentDetailLoop>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>CTT</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>NumberOfLineItems</fieldName>
+				<type>N0</type>
+				<minLength>1</minLength>
+				<maxLength>6</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>3</group>
+		<parentGroup>2</parentGroup>
+		<order>null</order>
+		<level>1</level>
+	</lineDefinition>
+
+	<lineDefinition>
+		<recordType>SE</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>NumberOfIncludedSegments</fieldName>
+				<type>N</type>
+				<minLength>1</minLength>
+				<maxLength>10</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>TransactionSetControlNumber</fieldName>
+				<type>AN</type>
+				<minLength>4</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>2</group>
+		<parentGroup>1</parentGroup>
+		<order>2</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>GE</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>NumberOfTransactionsetsIncluded</fieldName>
+				<type>ID</type>
+				<minLength>3</minLength>
+				<maxLength>3</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>DataInterchangeControlNumber</fieldName>
+				<type>A</type>
+				<minLength>4</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>1</group>
+		<parentGroup>0</parentGroup>
+		<order>3</order>
+		<level>1</level>
+	</lineDefinition>
+	<lineDefinition>
+		<recordType>IEA</recordType>
+		<columnDefinition>
+
+			<column>
+				<position>0</position>
+				<fieldName>Element</fieldName>
+				<type>A</type>
+				<minLength>2</minLength>
+				<maxLength>2</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>1</position>
+				<fieldName>NumberOfIncludedGroups</fieldName>
+				<type>N0</type>
+				<minLength>1</minLength>
+				<maxLength>5</maxLength>
+				<required>M</required>
+				<fixedValue></fixedValue>
+			</column>
+
+
+			<column>
+				<position>2</position>
+				<fieldName>InterchangeControlNumber</fieldName>
+				<type>N0</type>
+				<minLength>9</minLength>
+				<maxLength>9</maxLength>
+				<required>M</required>
+				<calculatedValue>InterchangeControlNumber</calculatedValue>
+			</column>
+
+		</columnDefinition>
+		<required>true</required>
+		<min>1</min>
+		<max>1</max>
+		<group>1</group>
+		<parentGroup>0</parentGroup>
+		<order>4</order>
+		<level>1</level>
+	</lineDefinition>
+</documentDefinition>

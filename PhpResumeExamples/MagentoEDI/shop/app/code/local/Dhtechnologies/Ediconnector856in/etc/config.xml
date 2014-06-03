@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Dhtechnologies_Ediconnector856in>
+			<!-- declare module's version information for database updates -->
+			<version>0.1.0</version>
+		</Dhtechnologies_Ediconnector856in>
+	</modules>
+	<global>
+		<!-- declare model group for new module -->
+		<models>
+			<!-- model group alias to be used in Mage::getModel('Ediconnector856in/...') -->
+			<ediconnector856in>
+				<!-- base class name for the model group -->
+				<class>Dhtechnologies_Ediconnector856in_Model</class>
+			</ediconnector856in>			
+		</models>
+		<ediconnectorbase>
+			<documentPackages>
+				<edi856in>Ediconnector856in</edi856in>
+			</documentPackages>
+			<actionList>
+				<actionDefinition856in>
+					<sequenceNum>3000</sequenceNum>
+					<documentType>856</documentType>
+					<direction>in</direction>
+					<actionType>Dhtechnologies_Ediconnector856in_Model_Connector_Edi_Core_Format_Action_EdiUpdateSalesOrderTrackingIn</actionType>
+					<processCodes></processCodes>
+				</actionDefinition856in>
+			</actionList>
+		</ediconnectorbase>
+	</global>
+
+	<!-- declare default configuration values for this module -->
+	<default>
+		<!-- 'payment' configuration section (tab) -->
+		<ediconnector>
+			<!-- 'Ediconnector856in' configuration group (fieldset) -->
+			<ediconnector856in>
+				<!-- by default this payment method is inactive -->
+				<active>0</active>
+				<!-- model to handle logic for this payment method -->
+				<model>ediconnector856in/ediconnector856in</model>				
+			</ediconnector856in>
+		</ediconnector>
+	</default>	
+</config>
